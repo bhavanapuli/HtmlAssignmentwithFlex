@@ -1,0 +1,47 @@
+.mainContainer{
+    height:1000px;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+}
+
+header,footer{
+    flex:1;
+    padding:20px;
+    border:1px solid black;
+}
+
+header div{
+    width:200px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+main{
+    flex:12;
+    display:flex;
+    border: 1px solid black;
+}
+
+#filter{
+    flex:1;
+    border: 1px solid black;
+}
+
+#productsList{
+    flex:2;
+    list-style: none;
+}
+
+ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li{
+        width:200px;
+        height:200px;
+        text-align: center;
+        border:1px solid black;
+    }
+}
+

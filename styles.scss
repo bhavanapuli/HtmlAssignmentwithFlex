@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+@mixin dimension($width,$height) {
+    width: $width;
+    height: $height;   
+}
+
+.container{
+    @include dimension(400px,400px );
+    margin:10px;
+    border: 1px solid black;
+}
+
+.container1{
+    left:500px;
+    position: absolute;
+}
+
+.container2{
+    position: absolute;
+}
+
+.box{
+    @include dimension(100px,100px );
+}
+
+.centerBox{
+    position: relative;
+    left:35%;
+    top:35%;
+    background-color: darkcyan;
+}
+
+.innerBox{
+    @extend .centerBox;
+    @include dimension(30px,30px );
+    background-color: white;
+    border:0.5px solid black;
+}
+
+.topLeftBox{
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: $red;
+}
+
+.topRightBox{
+    position: absolute;
+    top:0px;
+    right:0px;
+    background-color:$green;
+}
+
+.bottomLeftBox{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    background-color:$blueViolet;
+}
+
+.bottomRightBox{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    background-color:$chocolate;
+}

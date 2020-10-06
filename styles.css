@@ -1,68 +1,63 @@
-.container{
-    width:400px;
-    height: 400px;
-    margin:10px;
-    border: 1px solid black;
+.container {
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border: 1px solid black;
 }
 
-.container1{
-    left:500px;
-    position: absolute;
+.container1 {
+  left: 500px;
+  position: absolute;
 }
 
-.container2{
-    position: absolute;
+.container2 {
+  position: absolute;
 }
 
-.box{
-    width:100px;
-    height: 100px;
+.box {
+  width: 100px;
+  height: 100px;
 }
 
-.innerBox{
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border:0.5px solid black;
+.centerBox, .innerBox {
+  position: relative;
+  left: 35%;
+  top: 35%;
+  background-color: darkcyan;
 }
 
-.center{
-    position: relative;
-    left:35%;
-    top:35%;
+.innerBox {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 0.5px solid black;
 }
 
-.centerBox{
-    position: relative;
-    left:35%;
-    top:35%;
-    background-color: darkcyan;
+.topLeftBox {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: red;
 }
 
-.topLeftBox{
-    position: relative;
-    top:0px;
-    left:0px;
-    background-color: red;
+.topRightBox {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: green;
 }
 
-.topRightBox{
-    position: absolute;
-    top:0px;
-    right:0px;
-    background-color:green;
+.bottomLeftBox {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: blueviolet;
 }
 
-.bottomLeftBox{
-    position: absolute;
-    bottom:0px;
-    left:0px;
-    background-color:blueviolet;
+.bottomRightBox {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: chocolate;
 }
-
-.bottomRightBox{
-    position: absolute;
-    bottom:0px;
-    right:0px;
-    background-color:chocolate;
-}
+/*# sourceMappingURL=styles.css.map */
